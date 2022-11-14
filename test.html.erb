@@ -20,7 +20,7 @@
     <% data = [] %>
 
     <% result.each do |record| %>
-      <%  data << "ゴーヤの大きさ：#{record["weight"]}　売った相手：#{record["give_for"]}" %>
+      <%  data << "ゴーヤの大きさ：#{record["weight"]} 売った相手：#{record["give_for"]}" %>
     <% end %>
 
     <form action="goya.cgi" method="POST">

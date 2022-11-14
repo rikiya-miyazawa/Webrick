@@ -16,9 +16,9 @@ server.mount('/indicate.cgi', WEBrick::HTTPServlet::CGIHandler, 'indicate.rb')
 
 server.mount('/goya.cgi', WEBrick::HTTPServlet::CGIHandler, 'goya.rb')
 
-server.mount('/', WEBrick::HTTPServlet::CGIHandler, 'kadai.html.erb')
+server.mount('/', WEBrick::HTTPServlet::ERBHandler, 'kadai.html.erb')
 
-server.mount('/give_for.cgi', WEBrick::HTTPServlet::CGIHandler, 'give_for.rb')
+server.mount('/givefor.cgi', WEBrick::HTTPServlet::CGIHandler, 'give_for.rb')
 
 server.mount('/quality.cgi', WEBrick::HTTPServlet::CGIHandler, 'quality.rb')
 
